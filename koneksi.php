@@ -1,8 +1,8 @@
 <?php
-    $serverName = "localhost";
-    $userName = "root";
-    $password = "";
-    $dbName = "resume";
+    $serverName = "sql208.epizy.com";
+    $userName = "epiz_30144639";
+    $password = "ydkWnVXDQHVy";
+    $dbName = "epiz_30144639_resume";
 
     //Buat Koneksi 
     $koneksi = mysqli_connect($serverName, $userName, $password, $dbName);
