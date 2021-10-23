@@ -23,7 +23,7 @@ include("koneksi.php");
 
 <!--Navbar Awal-->    
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Rizky Ananda</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,17 +40,49 @@ include("koneksi.php");
     </div>
   </div>
 </nav>
-
 <!--Navbar Akhir-->
-
-<!-- Jumbotron -->
-<section class="jumbotron text-center text-light">
-  <h1 class ="pb-3">Welcome To My Portofolio</h1>
-    <img src="img/foto2.jpeg" alt="Rizky Ananda" width="300" class="rounded-circle">
-  <h1 class="display-4 dark">Rizky Ananda</h1>
-  <p class="lead">Mahasiswa | Order Management Admin</p>
+<!-- Skill -->
+<section id="skill">
+<div class="container text-white">
+  <div class="row">
+    <div class="col text-center">
+      <h2>Skill</h2>
+    </div>
+  </div>
+  <table class="table text-white">
+  <thead>
+    <tr>
+      <th scope="col-8">Skill</th>
+      <th scope="col-4">Percentase</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ms. Office</td>
+      <td>80%</td>
+    </tr>
+    <tr>
+      <td>Html</td>
+      <td>60%</td>
+    </tr>
+    <tr>
+      <td>PHP</td>
+      <td>60%</td>
+    </tr>
+    <tr>
+      <td>MySQL</td>
+      <td>50%</td>
+    </tr>
+    <tr>
+      <td>Perawatan Mobil</td>
+      <td>70%</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </section>
-<!-- Akhir Jumbotron -->
+<!-- Akhir Skill -->
+
 <!-- Gambar Background Diambil dari https://unsplash.com/photos/JYGnB9gTCls & Google Images -->
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -43,14 +43,77 @@ include("koneksi.php");
 
 <!--Navbar Akhir-->
 
-<!-- Jumbotron -->
-<section class="jumbotron text-center text-light">
-  <h1 class ="pb-3">Welcome To My Portofolio</h1>
-    <img src="img/foto2.jpeg" alt="Rizky Ananda" width="300" class="rounded-circle">
-  <h1 class="display-4 dark">Rizky Ananda</h1>
-  <p class="lead">Mahasiswa | Order Management Admin</p>
+<!-- Social Media -->
+<section id="Account">
+<div class="container text-center text-light">
+  <div class="row">
+    <div class="col">
+      <h2>Social Media</h2>
+    </div>
+  </div>
+  <div class="row text-dark pt-5">
+    <div class="col-md-3 mb-3">
+      <div class="card">
+          <img src="img/instagram.jpg" class="card-img-top" alt="...">
+          <?php
+          $judul = "SELECT * FROM artikel where judulartikel='Instagram'";
+          $hasil = mysqli_query($koneksi, $judul);
+          $row = mysqli_fetch_array($hasil);
+          ?>
+        <div class="card-body">
+          <h2><?= $row["judulartikel"]; ?></h2>
+          <p class="card-text"><?= $row["isi"]; ?></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card">
+          <img src="img/linkedin.png" class="card-img-top" alt="...">
+          <?php
+          $judul = "SELECT * FROM artikel where judulartikel='Linked In'";
+          $hasil = mysqli_query($koneksi, $judul);
+          $row = mysqli_fetch_array($hasil);
+          ?>
+        <div class="card-body">
+          <h2><?= $row["judulartikel"]; ?></h2>
+          <p class="card-text"><?= $row["isi"]; ?></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card">
+          <img src="img/whatsapp.png" class="card-img-top" alt="...">
+          <?php
+          $judul = "SELECT * FROM artikel where judulartikel='Whatsapp'";
+          $hasil = mysqli_query($koneksi, $judul);
+          $row = mysqli_fetch_array($hasil);
+          ?>
+        <div class="card-body">
+          <h2><?= $row["judulartikel"]; ?></h2>
+          <p class="card-text"><?= $row["isi"]; ?></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card">
+          <img src="img/email3.png" class="card-img-top" alt="...">
+          <?php
+          $judul = "SELECT * FROM artikel where judulartikel='Email'";
+          $hasil = mysqli_query($koneksi, $judul);
+          $row = mysqli_fetch_array($hasil);
+          ?>
+        <div class="card-body">
+          <h2><?= $row["judulartikel"]; ?></h2>
+          <p class="card-text"><?= $row["isi"]; ?></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
-<!-- Akhir Jumbotron -->
+<!-- Akhir Social Media -->
+
+
 <!-- Gambar Background Diambil dari https://unsplash.com/photos/JYGnB9gTCls & Google Images -->
 
     <!-- Optional JavaScript; choose one of the two! -->

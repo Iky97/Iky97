@@ -21,9 +21,9 @@ include("koneksi.php");
   <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
-<!--Navbar Awal-->    
+ <!--Navbar Awal-->    
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Rizky Ananda</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,14 +43,49 @@ include("koneksi.php");
 
 <!--Navbar Akhir-->
 
-<!-- Jumbotron -->
-<section class="jumbotron text-center text-light">
-  <h1 class ="pb-3">Welcome To My Portofolio</h1>
-    <img src="img/foto2.jpeg" alt="Rizky Ananda" width="300" class="rounded-circle">
-  <h1 class="display-4 dark">Rizky Ananda</h1>
-  <p class="lead">Mahasiswa | Order Management Admin</p>
+<!-- Tentang Saya -->
+<section class="About text-light" id="about">
+    <div class="container">
+      <div class="row">
+<?php
+
+$judul = "SELECT * FROM artikel where judulartikel='About Me'";
+$hasil = mysqli_query($koneksi, $judul);
+$row = mysqli_fetch_array($hasil);
+?>
+      <div class="col text-center">
+        <h2><?= $row["judulartikel"]; ?></h2>
+      <div class="row"> 
+        <div class="col">
+          <p2><?= $row["isi"]; ?></p2>
+        </div>
+      </div>
+      </div>
+
+<?php
+$judul = "SELECT * FROM artikel where judulartikel='Education'";
+$hasil = mysqli_query($koneksi, $judul);
+$row = mysqli_fetch_array($hasil);
+?>
+      <div class="row"> 
+      <div class="col text-center p-5">
+      <h2><?= $row["judulartikel"]; ?></h2>
+          <p2><?= $row["isi"]; ?></p2>
+        </div>
+<?php
+$judul = "SELECT * FROM artikel where judulartikel='Experience'";
+$hasil = mysqli_query($koneksi, $judul);
+$row = mysqli_fetch_array($hasil);
+?>
+        <div class="col text-center p-5">
+          <h2><?= $row["judulartikel"]; ?></h2>
+          <p2><?= $row["isi"]; ?></p2>
+        </div>
+        </div>
+      </div>
 </section>
-<!-- Akhir Jumbotron -->
+<!-- Akhir Tentang Saya -->
+
 <!-- Gambar Background Diambil dari https://unsplash.com/photos/JYGnB9gTCls & Google Images -->
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -43,14 +43,46 @@ include("koneksi.php");
 
 <!--Navbar Akhir-->
 
-<!-- Jumbotron -->
-<section class="jumbotron text-center text-light">
-  <h1 class ="pb-3">Welcome To My Portofolio</h1>
-    <img src="img/foto2.jpeg" alt="Rizky Ananda" width="300" class="rounded-circle">
-  <h1 class="display-4 dark">Rizky Ananda</h1>
-  <p class="lead">Mahasiswa | Order Management Admin</p>
-</section>
-<!-- Akhir Jumbotron -->
+<!-- Contact -->
+<section class="contact bg-dark text-white" id="Contact">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col pt-5">
+        <h2>Contact Me</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="name" aria-describedby="name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="email">
+          </div>
+          <div class="mb-3">
+            <label for="pesan" class="form-label">Pesan</label>
+            <textarea class="form-control" id="pesan" rows="3"></textarea>
+          </div>
+          
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <div class="pb-5"></div>
+      </form>
+      </div>
+    </div>
+  </div>
+</section> 
+<!-- Akhir Contact -->
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-5">
+  <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/rananda_7/" class="text-White fw-bold">
+  Rizky Ananda </a></p>
+</footer>
+<!-- Akhir Footer -->
+
 <!-- Gambar Background Diambil dari https://unsplash.com/photos/JYGnB9gTCls & Google Images -->
 
     <!-- Optional JavaScript; choose one of the two! -->
