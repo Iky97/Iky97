@@ -5,9 +5,9 @@
   background-size: 100% 100%;
 }
 
-.About {
-  padding-top: 8rem;
-  padding-bottom: 10rem;
+#about {
+  padding-top: 6rem;
+  padding-bottom: 16rem;
   background: url(img/background4.jpg);
   background-size: 100% 100%;
 }
@@ -28,7 +28,7 @@
 
 #skill {
   padding-top: 6rem;
-  padding-bottom: 15rem;
+  padding-bottom: 18rem;
   background: url(img/background7.jpg);
   background-size: 100% 100%;
 }
